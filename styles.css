@@ -31,6 +31,7 @@ body {
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
+  overflow-x: hidden;
 }
 
 a {
@@ -202,9 +203,10 @@ h4 {
 
 h1,
 h2 {
-  font-weight: 800;
+  font-weight: 650;
   letter-spacing: 0;
-  line-height: 1.08;
+  line-height: 1.12;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -429,7 +431,7 @@ section {
 }
 
 h2 {
-  font-size: clamp(44px, 4.4vw, 62px);
+  font-size: clamp(42px, 4vw, 56px);
 }
 
 .small_h {
@@ -460,7 +462,7 @@ h2 {
 
 .spend_metric span {
   font-size: clamp(70px, 8.2vw, 100px);
-  font-weight: 800;
+  font-weight: 720;
 }
 
 .spend_metric em {
@@ -480,7 +482,7 @@ h2 {
   flex-wrap: wrap;
   gap: 32px;
   color: #9b9aa5;
-  font-weight: 750;
+  font-weight: 620;
 }
 
 .logo_row {
@@ -512,13 +514,13 @@ h2 {
 .stats_row strong {
   display: block;
   font-size: 46px;
-  font-weight: 800;
+  font-weight: 720;
 }
 
 .stats_row span {
   display: block;
   margin-top: 8px;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .stats_row small {
@@ -557,8 +559,8 @@ h2 {
 
 .stack_list article {
   display: flex;
-  gap: 16px;
-  padding: 18px;
+  gap: 18px;
+  padding: 22px;
   border-radius: 12px;
 }
 
@@ -575,12 +577,14 @@ h2 {
   background: rgba(255,255,255,0.07);
   color: #d8d4e4;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 620;
 }
 
 h3 {
   font-size: 20px;
-  line-height: 1.25;
+  font-weight: 600;
+  line-height: 1.34;
+  overflow-wrap: break-word;
 }
 
 .stack_list p,
@@ -601,7 +605,7 @@ h3 {
 .site_footer p,
 .site_footer a {
   color: var(--muted);
-  line-height: 1.62;
+  line-height: 1.76;
 }
 
 .code_window {
@@ -658,7 +662,7 @@ code {
 .server_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 22px;
 }
 
 .feature_grid article,
@@ -669,7 +673,7 @@ code {
 .setup_card,
 .faq_grid article {
   border-radius: 16px;
-  padding: 28px;
+  padding: 32px;
 }
 
 .feature_grid i {
@@ -680,15 +684,15 @@ code {
 .feature_grid h3,
 .security_grid h3,
 .server_grid h3 {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .feature_grid a,
 .server_grid span {
   display: inline-flex;
-  margin-top: 22px;
+  margin-top: 26px;
   color: #c875ff;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .quote_grid {
@@ -702,9 +706,10 @@ code {
 }
 
 .quote_grid p {
-  min-height: 92px;
+  min-height: 108px;
   color: #e5e2ed;
   font-size: 17px;
+  line-height: 1.72;
 }
 
 .quote_grid div {
@@ -731,23 +736,23 @@ code {
 .action_grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 28px;
+  gap: 32px;
   align-items: stretch;
 }
 
 .preview_stack,
 .chat_stack {
   display: grid;
-  gap: 18px;
+  gap: 22px;
 }
 
 .preview_stack article {
   display: grid;
   grid-template-columns: 150px 1fr;
-  gap: 18px;
+  gap: 22px;
   align-items: center;
   min-height: 146px;
-  padding: 18px;
+  padding: 22px;
   border-radius: 16px;
 }
 
@@ -761,7 +766,7 @@ code {
 }
 
 .chat_stack article {
-  padding: 24px;
+  padding: 30px;
   border-radius: 18px;
   background: #f8f8fb;
   color: #161725;
@@ -769,28 +774,29 @@ code {
 
 .chat_stack b {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
+  font-weight: 620;
 }
 
 .chat_stack p {
   color: #4f5062;
-  line-height: 1.66;
+  line-height: 1.78;
 }
 
 .chat_stack .bubble {
   color: #181829;
-  font-weight: 700;
-  margin-bottom: 16px;
+  font-weight: 620;
+  margin-bottom: 20px;
 }
 
 .use_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .use_grid article {
-  padding: 34px;
+  padding: 40px;
   border-radius: 18px;
 }
 
@@ -803,7 +809,7 @@ code {
 
 .use_grid small {
   color: #c875ff;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .use_grid ul {
@@ -813,7 +819,7 @@ code {
 }
 
 .use_grid li + li {
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .use_grid li::before {
@@ -826,17 +832,17 @@ code {
   max-width: 910px;
   margin: 0 auto 16px;
   color: #dcd9e5;
-  font-weight: 700;
+  font-weight: 620;
 }
 
 .option_label.second {
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 .setup_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 22px;
   max-width: 910px;
   margin: 0 auto;
 }
@@ -847,9 +853,9 @@ code {
 
 .card_title {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .card_title small {
@@ -864,17 +870,17 @@ code {
 
 .setup_card li + li,
 .report_card li + li {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .report_card {
   display: grid;
   grid-template-columns: 1fr 0.7fr auto;
-  gap: 28px;
+  gap: 34px;
   align-items: center;
   max-width: 910px;
   margin: 0 auto;
-  padding: 28px;
+  padding: 34px;
   border: 1px solid rgba(166,69,220,0.32);
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(166,69,220,0.13), rgba(255,255,255,0.03));
@@ -885,9 +891,9 @@ code {
   margin: 0 auto 28px;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 22px;
+  gap: 26px;
   align-items: center;
-  padding: 22px 26px;
+  padding: 28px 32px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255,255,255,0.035);
@@ -905,9 +911,9 @@ code {
 .compare_card {
   display: flex;
   justify-content: space-between;
-  gap: 28px;
+  gap: 34px;
   align-items: center;
-  padding: 34px;
+  padding: 40px;
   border: 1px solid rgba(166,69,220,0.24);
   border-radius: 22px;
   background: radial-gradient(circle at 0% 0%, rgba(166,69,220,0.16), transparent 36%), rgba(255,255,255,0.035);
@@ -919,23 +925,23 @@ code {
 
 .compare_card span {
   color: #c875ff;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .faq_grid {
   max-width: 920px;
   margin: 48px auto 0;
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
 .faq_grid article {
-  padding: 22px 24px;
+  padding: 28px 30px;
 }
 
 .faq_grid h3 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .final_cta {
@@ -949,8 +955,8 @@ code {
 }
 
 .final_cta h2 {
-  font-size: clamp(50px, 5.5vw, 78px);
-  line-height: 1.08;
+  font-size: clamp(48px, 5.1vw, 72px);
+  line-height: 1.12;
 }
 
 .final_cta .button_row {
@@ -986,8 +992,8 @@ code {
 .case_grid article div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 6px 18px;
-  margin-top: 24px;
+  gap: 10px 22px;
+  margin-top: 30px;
 }
 
 .case_grid small,
@@ -998,6 +1004,7 @@ code {
 .case_grid b {
   color: #fff;
   font-size: 32px;
+  font-weight: 700;
 }
 
 .case_grid span {
@@ -1024,9 +1031,10 @@ code {
 
 .compare_table span,
 .compare_table b {
-  padding: 18px 20px;
+  padding: 22px 24px;
   color: var(--muted);
   border-right: 1px solid var(--line_soft);
+  line-height: 1.6;
 }
 
 .compare_table b {
