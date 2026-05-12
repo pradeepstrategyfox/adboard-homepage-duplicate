@@ -288,6 +288,16 @@ h2 span,
   opacity: 0.86;
 }
 
+.hero_image {
+  width: 100%;
+  aspect-ratio: 16 / 10.8;
+  background:
+    linear-gradient(110deg, rgba(1,1,6,0.2), rgba(1,1,6,0.68)),
+    url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=85");
+  background-size: cover;
+  background-position: center;
+}
+
 .video_mock {
   position: absolute;
   inset: 34px 12px 38px auto;

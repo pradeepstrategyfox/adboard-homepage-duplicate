@@ -1,3 +1,3 @@
-# Adboard Homepage
+# Strategy Fox Homepage
 
-Static homepage inspired by the supplied reference, with original copy, graphics, and media.
+Static homepage for Strategy Fox, focused on AI services, workflow automation, data integration, and commerce technology.
