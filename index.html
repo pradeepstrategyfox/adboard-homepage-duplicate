@@ -190,15 +190,57 @@
             <h2>Proprietary products and AI software</h2>
             <p class="lead narrow">Strategy Fox has an in house development team that builds client software and its own suite of commerce and AI products.</p>
           </div>
-          <div class="action_grid">
-            <div class="preview_stack">
-              <article><span></span><div><h3>DraftedX</h3><p>A web based 3D product customiser for ecommerce brands, with design tools, real time product preview, print ready export, and Shopify integration.</p></div></article>
-              <article><span></span><div><h3>SimulatorX</h3><p>An AI room visualisation tool that maps products onto walls, floors, and furniture in customer photos with scale and perspective adjustment.</p></div></article>
-            </div>
-            <div class="chat_stack">
-              <article><b>CampaignX</b><p class="bubble">AI powered email outreach and campaign automation.</p><p>CampaignX performs market discovery, keyword website search, email extraction, AI brand insight generation, bulk campaign automation, contact database creation, analytics, and a multi campaign dashboard.</p></article>
-              <article><b>Immersive Experience Stack</b><p class="bubble">Custom shopping and real estate environments.</p><p>Includes interactive 3D products, AR try on, AR real life views, AI sales assistants, video slots, VR compatibility, lead forms, analytics, and Shopify connected purchase paths.</p></article>
-            </div>
+          <div class="product_setup">
+            <article class="product_card product_card_wide">
+              <div class="product_copy">
+                <div class="product_title">
+                  <i>DX</i>
+                  <div>
+                    <h3>DraftedX</h3>
+                    <small>3D product customiser</small>
+                  </div>
+                </div>
+                <p>A web based design studio for ecommerce brands with drawing, text, image tools, real time 3D preview, print ready export, order linked design capture, and Shopify integration.</p>
+                <ul>
+                  <li>Built for custom products and high resolution assets</li>
+                  <li>Brand dashboard with order and design tracking</li>
+                </ul>
+              </div>
+              <div class="product_code">
+                <button type="button">Copy</button>
+                <p>.STRATEGYFOX/PRODUCTS.JSON</p>
+                <pre><code>{
+  "DraftedX": {
+    "tools": ["draw", "text", "image_upload"],
+    "preview": "real_time_3d",
+    "exports": ["print_ready_file", "order_design"],
+    "integrations": ["Shopify", "analytics"]
+  }
+}</code></pre>
+              </div>
+            </article>
+
+            <article class="product_card">
+              <div class="product_title">
+                <i>CX</i>
+                <div>
+                  <h3>CampaignX</h3>
+                  <small>AI email outreach engine</small>
+                </div>
+              </div>
+              <p>Market discovery, keyword website search, email extraction, AI brand insights, bulk campaigns, contact databases, analytics, and a multi campaign dashboard.</p>
+            </article>
+
+            <article class="product_card">
+              <div class="product_title">
+                <i>SX</i>
+                <div>
+                  <h3>SimulatorX</h3>
+                  <small>AI room preview generator</small>
+                </div>
+              </div>
+              <p>Maps products onto walls, floors, and furniture in customer photos with scale, perspective, variations, catalog integration, and mobile uploads.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -365,5 +407,17 @@
         <p>Growth systems, AI products, and immersive commerce</p>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll(".product_code button").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const code = button.parentElement.querySelector("code").innerText;
+          await navigator.clipboard.writeText(code);
+          button.textContent = "Copied";
+          setTimeout(() => {
+            button.textContent = "Copy";
+          }, 1400);
+        });
+      });
+    </script>
   </body>
 </html>
